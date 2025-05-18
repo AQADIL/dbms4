@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Online Quiz System | DBMS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button id="lang-en" class="active">EN</button>
+        <button id="lang-ru">RU</button>
+    </div>
+    
+    <header class="gradient-bg">
+        <h1 id="main-title">Online Quiz System - DBMS Journey</h1>
+        <p id="subtitle">PostgreSQL Assignments Showcase</p>
+    </header>
+
+    <div class="container">
+        <div class="assignment-grid">
+            <div class="assignment-card" data-assignment="1" data-type="image">
+                <div class="card-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h3>Assignment 1</h3>
+                <p>ER Diagram</p>
+            </div>
+            
+            <div class="assignment-card" data-assignment="2" data-type="pdf">
+                <div class="card-icon">
+                    <i class="fas fa-table"></i>
+                </div>
+                <h3>Assignment 2</h3>
+                <p>CREATE, INTER TABLE, ALTER TABLE</p>
+            </div>
+            
+            <div class="assignment-card" data-assignment="3" data-type="pdf">
+                <div class="card-icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <h3>Assignment 3</h3>
+                <p>WHERE, SUBQUERIES, UPDATE, DELETE</p>
+            </div>
+            
+            <div class="assignment-card" data-assignment="4" data-type="pdf">
+                <div class="card-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>Assignment 4</h3>
+                <p>ALL TYPES OF JOIN</p>
+            </div>
+            
+            <div class="assignment-card" data-assignment="5" data-type="pdf">
+                <div class="card-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Assignment 5</h3>
+                <p>GROUP BY, SUBQUERIES</p>
+            </div>
+            
+            <div class="assignment-card" data-assignment="6" data-type="pdf">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Assignment 6</h3>
+                <p>WINDOW FUNCTIONS</p>
+            </div>
+            
+            <div class="assignment-card presentation-card" data-assignment="presentation" data-type="pdf">
+                <div class="card-icon">
+                    <i class="fas fa-presentation"></i>
+                </div>
+                <h3>Final Presentation</h3>
+                <p>Process of Сreation</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced PDF Viewer with Mobile Support -->
+    <div class="assignment-viewer" id="viewer">
+        <div class="viewer-header">
+            <h2 id="viewer-title">Assignment Viewer</h2>
+            <div class="viewer-controls">
+                <button class="fullscreen-btn" id="fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="download-btn" id="download">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button class="close-btn" id="close-viewer">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="viewer-content">
+            <div class="document-container">
+                <iframe id="pdf-viewer" style="display: none;"></iframe>
+                <img id="image-viewer" style="display: none;" alt="Assignment Image">
+            </div>
+            <div class="mobile-controls">
+                <button class="zoom-btn" id="zoom-in"><i class="fas fa-search-plus"></i></button>
+                <button class="zoom-btn" id="zoom-out"><i class="fas fa-search-minus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="reflection-section gradient-bg">
+        <div class="container">
+            <h2 id="reflection-title">My SQL Journey Reflection</h2>
+            <div class="reflection-content">
+                <p id="reflection-text-1">During my work on SQL assignments, I consistently completed 7 tasks, each of which expanded my skills in working with relational databases and queries in PostgreSQL. The first task involved using aggregate functions to analyze the maximum score by quiz difficulty levels. I particularly enjoyed using GROUP BY and ROUND, as well as sorting by descending average value - this allowed me to quickly determine how "generous" quizzes of different levels were.</p>
+                
+                <p id="reflection-text-2">Each assignment gave me new knowledge and pleasure from building competent, readable and efficient SQL queries. It was especially pleasant to format queries with explanations, turning code into a tool for data analysis and management.</p>
+                
+                <p id="reflection-text-3">These 6 assignments helped me comprehend the wisdom and features of working with databases. And I can confidently say that I'm already ready to work with large-scale projects.</p>
+                
+                <p id="reflection-text-4">THANK YOU 😊<br>p/s<br>Sagacious AKADIL</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Online Quiz System | Alish Akadil</p>
+        <div class="social-links">
+            <a href="https://github.com/AQADIL"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/77762349535"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/aqdlsh/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <button class="sql-download-btn" id="downloadSql">
+        <i class="fas fa-download"></i> Download SQL
+    </button>
+    
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
